@@ -102,6 +102,10 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 > 1. [资源命名约定](#anc)
 > 1. [目录结构](#structure)
 > 1. [蓝图](#bp)
+> 1. [静态网格体](#s)
+> 1. [粒子系统](#ps)
+> 1. [关卡/地图](#levels)
+> 1. [纹理](#textures)
 
 <a name="anc"></a>
 <a name="1"></a>
@@ -162,7 +166,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 > 1.2.1 通用类型[Most Common](#anc-common)
 
-> 1.2.2 动作[Animations](#anc-animations)
+> 1.2.2 动画[Animations](#anc-animations)
 
 > 1.2.3 人工智能[Artificial Intelligence](#anc-ai)
 
@@ -227,7 +231,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-ai"></a>
 <a name="1.2.3"></a>
-### 1.2.3 AI ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.3 AI ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -240,7 +244,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-bp"></a>
 <a name="1.2.4"></a>
-### 1.2.4 蓝图 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.4 蓝图 ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -254,7 +258,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-materials"></a>
 <a name="1.2.5"></a>
-### 1.2.5 材质 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.5 材质 ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -268,7 +272,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-textures"></a>
 <a name="1.2.6"></a>
-### 1.2.6 纹理 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.6 纹理 ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -289,9 +293,9 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 | Cube Render Target      | RTC_       |            |                                  |
 | Texture Light Profile   | TLP        |            |                                  |
 
-<a name="anc-textures-packing"</a>
+<a name="anc-textures-packing"></a>
 <a name="1.2.6.1"></a>
-#### 1.2.6.1 纹理合并 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+##### 1.2.6.1 纹理合并 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
 把多张纹理存于一个纹理文件中是很常见的方法，比如通常可以把自发光(Emissive), 粗糙度(Roughness), 环境光(Ambient Occlusion)以RGB通道的形式保存在纹理中，然后在文件的后缀中，注明这些信息，例如`_EGO`
 
 > 一般来说，在纹理的Diffuse信息中附带Alpha/Opacity信息是很常见的，这时在`_D`后缀中可以加入`A`也可以不用加
@@ -300,7 +304,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-misc"></a>
 <a name="1.2.7"></a>
-### 1.2.7 杂项 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.7 杂项 ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -326,7 +330,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-paper2d"></a>
 <a name="1.2.8"></a>
-### 1.2.8 2D ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.8 2D ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -338,7 +342,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-physics"></a>
 <a name="1.2.9"></a>
-### 1.2.9 物理 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.9 物理 ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -348,7 +352,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-sounds"></a>
 <a name="1.2.10"></a>
-### 1.2.10 声音 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.10 声音 ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -365,7 +369,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-ui"></a>
 <a name="1.2.11"></a>
-### 1.2.11 界面 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.11 界面 ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | 资源类型                | 前缀       | 后缀       | 备注                             |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -376,7 +380,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 <a name="anc-effects"></a>
 <a name="1.2.12"></a>
-### 1.2.12 Effects ![#](https://img.shields.io/badge/lint-supported-green.svg)
+#### 1.2.12 Effects ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -467,6 +471,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 > 2.8 材质库[Material Library](#structure-material-library)
 
+> 2.9 不要有空目录[No Empty Folders](#structure-no-empty-folders)
 
 <a name="2.1"></a>
 <a name="structure-folder-names"><a>
@@ -569,7 +574,7 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 记住，尽量使用不浪费大家的时间的方法去解释你的地图如何打开。比如通过子目录的方法去组织地图资源，例如建立 `Maps/Campaign1/` 或 `Maps/Arenas`，但最重要的是一定要都放在`/Content/Project/Maps`
 
-这也有助于产品的打版本工作，如果工程里的地图保存的到处都是，版本工程师还要到处去找，就让人很恼火了，而把地图放在一个地方，做版本时就很难漏掉某个地图，对于烘培光照贴图或者质量检查都有利。
+这也有助于产品的打版本工作，如果工程里的地图保存的到处都是，版本工程师还要到处去找，就让人很恼火了，而把地图放在一个地方，做版本时就很难漏掉某个地图，对于烘焙光照贴图或者质量检查都有利。
 
 <a name="2.5"></a>
 <a name="structure-core"></a>
@@ -627,6 +632,21 @@ Gamemakin LLC 有一个公开的讨论板块，地址是http://discord.gamemak.i
 
 任何用来测试或调试的材质应该保存在`MaterialLibrary/Debug`中，这样当工程正式发布时，可以很容易把这些材质从删除，因为这些材质如果不删除，可能在最终产品中非常扎眼。
 
+### 2.9 不要有空目录 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+
+不要有任何空目录，这会使内容浏览器变得混乱。
+
+如果你发现一个空目录无法删除，请执行以下步骤：
+
+1. 确保在使用版本控制工具
+1. 立即在您的项目上运行修复重定向器(Fix Up Redirectors)
+1. 导航到磁盘上的目录，然后删除其中的资产
+1. 关闭编辑器
+1. 确保版本控制工具处于同步状态
+1. 打开编辑器，确认是否正常，如不是请返回检查
+1. 确保空目录不见了
+1. 将更改提交到版本控制工具
+
 <a name="3"></a>
 <a name="bp"></a>
 ## 3. 蓝图 ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
@@ -644,7 +664,7 @@ Remember: Blueprinting badly bears blunders, beware! (Phrase by [KorkuVeren](htt
 
 > 3.3 函数[Functions](#bp-functions)
 
-> 3.4 图形节点[Graphs](#bp-graphs)
+> 3.4 图表[Graphs](#bp-graphs)
 
 <a name="3.1"></a>
 <a name="bp-compiling"></a>
@@ -654,7 +674,7 @@ Remember: Blueprinting badly bears blunders, beware! (Phrase by [KorkuVeren](htt
 
 *绝对不要*提交那些断开的蓝图，如果你需要通过源码服务器保存，那么必须暂时搁置它们
 
-断开的蓝图有巨大的破坏力，而且会在蓝图之外展现威力，比如造成引用失效，未定义的行为，烘培失败，或者频繁的重新编译。一个断开的蓝图可能会毁掉整个项目。
+断开的蓝图有巨大的破坏力，而且会在蓝图之外展现威力，比如造成引用失效，未定义的行为，烘焙失败，或者频繁的重新编译。一个断开的蓝图可能会毁掉整个项目。
 
 <a name="3.2"></a>
 <a name="bp-vars"></a>
@@ -1071,13 +1091,23 @@ Transient类型的变量是指那些不需要被序列化（保存或者加载�
 * Function Entry - 函数入口
 * Self - 自身节点
 
+#### 3.3.4 所有公共函数都应具有说明 ![#](https://img.shields.io/badge/lint-supported-green.svg)
+
+该规则更适用于面向公众或市场的蓝图，因此其他人可以更轻松地导航和使用您的蓝图API。
+
+简单地说，任何具有Public访问说明符的函数都应填写其描述。
+
+#### 3.3.5 所有声明了 `BlueprintCallable` 说明符的自定义静态函数应按插件名分类 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+
+如果您的项目包含声明了 `static` 和`BlueprintCallable` 函数的插件, 则它们的类别应设置为插件的名称或插件名称的子集类别。
+
+例如, `Zed Camera Interface` 或者 `Zed Camera Interface | Image Capturing`。
 
 <a name="3.4"></a>
 <a name="bp-graphs"></a>
-### 3.4 蓝图图形
+### 3.4 蓝图图表
 
-本节包含了关于蓝图图形的内容
-This section covers things that apply to all Blueprint graphs.
+本节包含了关于蓝图图表的内容
 
 <a name="3.4.1"></a>
 <a name="bp-graphs-spaghetti"></a>
@@ -1105,6 +1135,20 @@ This section covers things that apply to all Blueprint graphs.
 #### 3.4.3 白色的可执行线优先级最高
 
 如果发现白色执行线和其他数据线无法同时对齐，白色执行线的优先级更高。
+
+#### 3.4.4 图表请合理添加注释 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+
+节点块应包含在描述其更高级别行为的注释中。虽然每个函数都应进行良好的命名，以便每个单独的节点都易于读取和理解，但达成特定目的的节点组也应添加注释块描述其目的。如果一个函数没有很多节点块，并且清楚表明这些节点在该函数中具有直接作用，则无需注释它们，因为函数名称和描述就足够了。
+
+#### 3.4.5 图表应在合适的情况下处理类型转换错误 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+
+倘若函数或事件假定强制转换始终成功，应适当提示逻辑错误如果转换失败。这能让其他人知道为什么‘应该能工作的’东西不起作用。如果已知正在转换的引用可能无法转换，则函数也应在转换失败后尝试正常恢复。
+
+这并不意味着每个强制转换节点都应该处理其故障。在许多情况下，特别是和碰撞之类的功能有关的事件，可以预期执行流会因强制转换失败而悄然终止。
+
+#### 3.4.6 图表不应有任何没用途/不执行的悬空节点 ![#](https://img.shields.io/badge/lint-unsupported-red.svg)
+
+蓝图图表里的所有节点都必须有它的用途。您不应在没有用途或不执行的图表周围留下悬空的蓝图节点。
 
 ## 贡献者
 
